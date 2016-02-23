@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClosingIndex.cs" />
     <Compile Include="CreatingIndex.cs" />
+    <Compile Include="DeleteDocuments.cs" />
     <Compile Include="DeleteIndex.cs" />
     <Compile Include="IndexingDocuments.cs" />
     <Compile Include="ModifyingDocuments.cs" />
