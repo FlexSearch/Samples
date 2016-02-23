@@ -21,7 +21,11 @@ namespace CSharpClient
             correctedDocument.Fields.Add("name", "Vladimir");
             correctedDocument.Fields.Add("age", "26");
 
-            documentsApi.UpdateDocument(correctedDocument, "contact", "7");
+            var response = documentsApi.UpdateDocument(correctedDocument, "contact", "7");
+
+            // This method doesn't return any significant data. It just reports any errors.
+            if (response.Error?.Message != null)
+                Console.WriteLine(response.Error.Message);
         }
 
         private void SetupSampleDocument(DocumentsApi documentsApi)

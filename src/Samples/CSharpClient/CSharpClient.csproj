@@ -44,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CreatingIndex.cs" />
+    <Compile Include="DeleteIndex.cs" />
+    <Compile Include="IndexingDocuments.cs" />
+    <Compile Include="ModifyingDocuments.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
