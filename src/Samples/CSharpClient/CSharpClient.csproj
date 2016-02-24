@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddOrUpdatePredefinedQuery.cs" />
     <Compile Include="ClosingIndex.cs" />
     <Compile Include="CreatingIndex.cs" />
     <Compile Include="DeleteDocuments.cs" />
