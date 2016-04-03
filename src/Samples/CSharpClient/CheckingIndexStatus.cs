@@ -24,7 +24,7 @@ namespace CSharpClient
         {
             var indicesApi = new IndicesApi("http://localhost:9800");
 
-            var response = indicesApi.GetStatus("country");
+            var response = indicesApi.GetIndexStatus("country");
 
             if (response.Error?.Message != null)
                 Console.WriteLine(response.Error.Message);

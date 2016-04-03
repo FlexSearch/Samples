@@ -9,7 +9,7 @@ namespace CSharpClient
         {
             var indicesApi = new IndicesApi("http://localhost:9800");
 
-            var response = indicesApi.UpdateStatus("contact", "offline");
+            var response = indicesApi.UpdateIndexStatus("contact", "offline");
 
             // This method doesn't return any significant data. It just reports any errors.
             if (response.Error?.Message != null)

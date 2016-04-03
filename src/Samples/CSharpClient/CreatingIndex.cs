@@ -22,7 +22,7 @@ namespace CSharpClient
 
             var response = indicesApi.CreateIndex(index);
             Debug.Assert(response.Error?.Message == null);
-            var indexName = response.Data.Id; // should be "contact"
+            Debug.Assert(response.Data == true);
         }
     }
 }

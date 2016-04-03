@@ -8,34 +8,17 @@ using System.Threading.Tasks;
 
 namespace CSharpClient
 {
-    public class SearchUsingPredefinedQuery
+    public class SearchData
     {
-        public void SearchWithoutVariables()
+        public void Search()
         {
             var searchApi = new SearchApi("http://localhost:9800");
 
-            var query = new SearchQuery()
+            var queryString = "gt(population, '100000000') AND allOf(countryname, 'United')";
+            var query = new SearchQuery("country", queryString)
             {
-                IndexName = "country",
-                QueryName = "agrisearch"
+                Columns = new string[] { "*" }
             };
-
-            var response = searchApi.Search("country", query);
-
-            InterpretResponse(response);
-        }
-
-        public void SearchWithVariables()
-        {
-            var searchApi = new SearchApi("http://localhost:9800");
-
-            var query = new SearchQuery()
-            {
-                IndexName = "country",
-                QueryName = "agrisearch"
-            };
-
-            query.Variables.Add("countryname", "romania");
 
             var response = searchApi.Search("country", query);
 
