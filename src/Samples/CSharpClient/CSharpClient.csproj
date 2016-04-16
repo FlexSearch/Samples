@@ -52,6 +52,7 @@
     <Compile Include="IndexingDocuments.cs" />
     <Compile Include="ModifyingDocuments.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchData.cs" />
     <Compile Include="SearchUsingPredefinedQuery.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
